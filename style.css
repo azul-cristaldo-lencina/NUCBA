@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+p .logo{
+    font-size: 7px;
+}
+body{
+    font-family: 'monospace', 'cursive';
+    margin: 0%;
+    background-color: rgba(252, 199, 24, 0.712) ;
+}
+h1{
+    font-size: 3.0em;
+    text-align: center;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;color: whitesmoke;font-family: 'Roboto';
+}
+p{ font-size: 1.25em;}
+
+button{
+    display: flex;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    color: orange;
+    background-color:rgba(0, 0, 0, 0.664) ;
+}
+
+button:hover{
+    color: aliceblue;
+    background-color: rgba(252, 199, 24, 0.884);
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+header{
+    background-color: rgba(252, 199, 24, 0.712);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px ;
+    font-weight: bold;
+    color: black;
+    font-size: 1.8em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: white
+}
+
+#hero{
+    text-align: center;
+    padding: 150px 12px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("./assets/img/logo2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somos{
+    background-color: white;
+
+}
+#somos .container{
+    text-align: center ;
+    padding: 200px 12px;
+}
+#nuestros-servicios{
+    background-color:rgba(252, 199, 24, 0.404); ;
+}
+
+
+#nuestros-servicios .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+#nuestros-servicios p{
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.482);
+    color: aliceblue;
+
+}
+#nuestros-servicios h2{
+    margin-top: 0;
+}
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#nuestros-servicios .carta{
+    width: 400px;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 13px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+        ,url("./assets/img/mercedes.jpeg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+        ,url("./assets/img/corsa.jpeg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+        ,url("./assets/img/128.jpeg");
+}
+
+
+#about h3{
+    margin: 15px;
+    text-align: center;
+    color: black;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.card{
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(216, 218, 173);
+    width: 300px;
+    height: 400px;
+}
+
+.card p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-contacto{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-contacto img{
+    width: 50%;
+}
+
+.medios-comunicacion{
+    margin: 10px;
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medios-comunicacion img{
+    width: 25px;
+    height: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;  
+          justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+   #somos .container{
+       display: flex;
+       justify-content: center;
+   }
+   #somos .texto{
+       width: 50%;
+       max-width: 600px;
+       text-align: initial;
+       padding: 0px 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+   #somos .img-container{
+       background-image:url("./assets/img/logo-camioneta.jpeg");
+       background-size: cover;
+       background-position: center center;
+       height: 500px;
+       width: 500px;
+   }
+   
+
+
+
+
+
+/* Pagina de inicio de sesion */
+
+#inicio{
+    text-align: center;
+    padding: 150px 12px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+form input{
+    margin: 8px;
+}
+
+/* Pagina de registro */
+
+#registro{
+    text-align: center;
+    padding: 150px 12px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+form input{
+    margin: 8px;
+}
