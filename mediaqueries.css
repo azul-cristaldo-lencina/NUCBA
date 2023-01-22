@@ -159,7 +159,21 @@ footer{
 
 }
 
-
 @media (max-width: 990px) {
-    
+    #registro{
+        font-size: 15px;
+        padding: 100px ;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    form{
+        font-size: 20px;
+    }
+    input{
+        width: 200px;
+        background-color: antiquewhite;
+    }
 }
