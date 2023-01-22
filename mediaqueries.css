@@ -1,0 +1,160 @@
+
+/* RESPONSIVE MODO TABLET */
+@media (max-width: 990px){
+
+    .container{
+        gap: 10px;
+    }
+
+header .logo{
+   font-size: 20px;
+}
+
+.navbar-list{
+    position: absolute;
+    top: 65px;
+    left: 20%;
+    right: 7%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(146, 91, 3, 0.834);
+    border: 2px solid rgba(252, 199, 24, 0.712);
+    border-top: 0px;
+    border-radius: 0px 0px 15 15px;
+    align-items: flex-end;
+    padding: 25px 30px;
+    gap: 20px;
+    z-index: 2;
+    display: none;
+
+}
+
+.navbar-list a{
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 253, 240);
+    justify-content: space-around;
+}
+
+
+/* ICONO DE MENU */
+
+.menu-label{
+    display: flex;
+    order: 2;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(238, 223, 86);
+    flex-wrap: nowrap;
+}
+
+.menu-label img{
+    width: 80px;
+    height: 80px;
+}
+
+
+#menu-toggle:checked + 
+.navbar-list {
+    display: flex;
+}
+
+h1{
+    font-size: 45px;
+}
+
+#hero button{
+    font-size: 15px;
+    background-color: rgb(202, 206, 209);
+    color: black;
+
+}
+
+#hero a{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto img{
+    display: none
+}
+
+.texto p{
+    width: 500px;
+}
+
+.texto{
+    gap: 5px
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nuestros-servicios .carta{
+    width: 450px;
+    height: 500px;
+}
+
+.card{
+    background-color: antiquewhite;
+    height: 400px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+#nuestros-servicios p{
+    font-size: 22px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+.info-contacto{
+    font-size: 28px;
+}
+
+iframe{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.medios-comunicacion p {
+    font-size: 15px;
+}
+
+.medios-comunicacion img{
+    height: 50px;
+    width: 50px;
+}
+
+.medios-comunicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer{
+    font-size: 15px;
+}
+
+}

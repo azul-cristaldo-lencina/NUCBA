@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maniático Garage</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="mediaqueries.css">
    <link rel="shortcut icon" href="./assets/img/logo2.jpeg" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="container">
             <p class="logo">Maniático Garage </p>
-            <nav>
-                <a href="#somos">¿Quienes somos?</a>
-                <a href="#nuestros-servicios">Nuestros servicios</a>
-                <a href="#about1">About</a>
-                <a href="#contact">Contáctanos</a>
+            <nav >
+                 <!-- MENU HAMBURGESA -->
+                <label for="menu-toggle" class="menu-label">
+                    <img src="./assets/img/icons8-menú-cuadrado-80.png" alt="">
+                </label>
+                <input type="checkbox" name="" id="menu-toggle">
+
+                <ul class="navbar-list">
+                    <il><a href="#nuestros-servicios">Nuestros servicios</a></il>
+                    <il><a href="#somos">¿Quienes somos?</a></il>
+                    <il><a href="#about1">About</a></il>
+                    <il><a href="#contact">Contáctanos</a></il>
+                </ul>
             </nav>
         </div>
+
     </header>
     <section id="hero">
         <h1>Cuidamos lo que más queres </h1>
@@ -27,12 +37,14 @@
     </section>
     <section id="somos">
         <div class="container">
-            <div class="img-container"></div>
             <div class="texto">
+                <img src="./assets/img/logo-camioneta.jpeg" alt="">
             <h2>Somos Maniático Garage</h2>
-            <p>Con más de 3 años de experiencia en mejorar el aspecto de vehiculos tanto interior como en el exterior.<br>
+            <p>Since 2017 <br>
+                 Con más de 3 años de experiencia en mejorar el aspecto de vehiculos tanto interior como en el exterior.<br>
                  Cuidandolo y brindandote la mejor atención posible. Nos da mucho gusto hacer lo que hacemos. <br>
-                </p>
+                 Tenemos varios servicios disponibles podes consultarnos por otros que no están detallados
+                 
         </div>
         </div>
         

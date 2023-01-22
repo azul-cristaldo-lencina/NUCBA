@@ -1,11 +1,17 @@
+
+
+
 *{
     box-sizing: border-box;
 }
+
+    
+
 html{
     scroll-behavior:smooth;
 }
 p .logo{
-    font-size: 7px;
+    font-size: 8px;
 }
 body{
     font-family: 'monospace', 'cursive';
@@ -13,7 +19,7 @@ body{
     background-color: rgba(252, 199, 24, 0.712) ;
 }
 h1{
-    font-size: 3.0em;
+    font-size: 5.0em;
     text-align: center;
 }
 h2{
@@ -57,25 +63,25 @@ header .logo{
     padding: 25px 30px ;
     font-weight: bold;
     color: black;
-    font-size: 1.8em;
+    font-size: 3em;
 }
 
 header .container{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 header nav{
     display: flex;
-    flex-direction:column;
+    align-items: center;
     text-align: center;
-    padding-bottom: 25px;
 }
 
 header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
     color: black;
 }
 
@@ -108,6 +114,18 @@ header a:hover{
     background-color: white;
 
 }
+
+.texto{
+    font-size: 1.5; 
+}
+
+.texto img{
+    height: 250px;
+    width: 250px;
+}
+
+
+
 #somos .container{
     text-align: center ;
     padding: 200px 12px;
@@ -138,8 +156,8 @@ header a:hover{
 }
 
 #nuestros-servicios .carta{
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -189,19 +207,20 @@ header a:hover{
     margin: 15px;
     padding: 20px;
     border-radius: 15px;
-    background-color: rgb(216, 218, 173);
-    width: 300px;
-    height: 400px;
+    background-color: rgb(231, 239, 80);
+    width: 400px;
+    height: 500px;
 }
 
 .card p{
-    font-size: 14px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
 }
 
 .info-contacto{
     margin: 10px;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +232,7 @@ header a:hover{
 
 .medios-comunicacion{
     margin: 10px;
-    font-size: 15px;
+    font-size: 20px;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -230,75 +249,17 @@ footer{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-}
-@media (min-width: 720px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-    header .container{
-        flex-direction: row;  
-          justify-content: space-between;
-    }
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 30px;
-    }
-   #somos .container{
-       display: flex;
-       justify-content: center;
-   }
-   #somos .texto{
-       width: 50%;
-       max-width: 600px;
-       text-align: initial;
-       padding: 0px 30px;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-   }
-   #somos .img-container{
-       background-image:url("./assets/img/logo-camioneta.jpeg");
-       background-size: cover;
-       background-position: center center;
-       height: 500px;
-       width: 500px;
-   }
-   
-
-
-
-
-
-/* Pagina de inicio de sesion */
-
-#inicio{
-    text-align: center;
-    padding: 150px 12px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
-a{
-    text-decoration: none;
+
+/* OCULTO MENÚ HAMBURGUESA */
+.icon-menu,
+#menu-toggle,
+.menu-label{
+    display: none;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-}
-
-form input{
-    margin: 8px;
-}
 
 /* Pagina de registro */
 
@@ -311,7 +272,17 @@ form input{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("./assets/img/logo2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 a{
@@ -327,4 +298,45 @@ form{
 
 form input{
     margin: 8px;
+}
+
+/* Pagina de inicio de sesion */
+
+#inicio{
+    text-align: center;
+    padding: 150px 12px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("./assets/img/logo2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+}
+
+form input{
+    font-size: 1em;
+    margin: 8px;
+    border-radius: 25px;
 }
