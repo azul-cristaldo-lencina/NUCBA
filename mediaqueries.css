@@ -7,8 +7,10 @@
     }
 
 header .logo{
-   font-size: 20px;
+   font-size: 23px;
 }
+
+
 
 .navbar-list{
     position: absolute;
@@ -62,18 +64,18 @@ header .logo{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 65px;
 }
 
 #hero button{
-    font-size: 15px;
+    font-size: 20px;
     background-color: rgb(202, 206, 209);
     color: black;
 
 }
 
 #hero a{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -102,8 +104,8 @@ h1{
 }
 
 #nuestros-servicios .carta{
-    width: 450px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
 .card{
@@ -112,23 +114,24 @@ h1{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #nuestros-servicios p{
-    font-size: 22px;
+    margin: 10px;
+    font-size: 25px;
 }
 
 h4{
-    font-size: 15px;
-}
-
-.card p{
     font-size: 20px;
 }
 
+.card p{
+    font-size: 17px;
+}
+
 .info-contacto{
-    font-size: 28px;
+    font-size: 22px;
 }
 
 iframe{
@@ -154,26 +157,156 @@ iframe{
 }
 
 footer{
-    font-size: 15px;
+    font-size: 18px;
+}
 }
 
-}
-
+/* MEDIAQUERI PAGINA REGISTRO MODO TABLET 990PX MAX */
 @media (max-width: 990px) {
+ 
     #registro{
         font-size: 15px;
-        padding: 100px ;
+        padding: 25px ;
     }
 
-    h1{
+    #registro h1{
         font-size: 25px;
     }
 
     form{
-        font-size: 20px;
+        font-size: 18px;
     }
     input{
-        width: 200px;
+        width: 180px;
         background-color: antiquewhite;
     }
+   
+}
+
+/* MEDIAQUERIE MOBILE PAGINA REGISTRO */
+
+@media (max-width: 500px){
+    #registro h1{
+        padding: 15px;
+        margin: 20px;
+        font-size: 30px;
+    }
+    .form-registro{
+        height: 40vh;
+        font-size: 15px;
+    }
+    .form-registro input{
+        width: 250px;
+        height: 30px;
+    }
+    .form-registro label{
+        color: white;
+        text-shadow: 2px solid;
+    }
+}
+
+/* PAGINA INICIO SESIÓN MEDIAQUERIE 990PX */
+
+@media (max-width: 990px) {
+    #inicio{
+        padding: 50px;
+        height: 75vh;
+    }
+}
+
+/* pagina inicio sesion mobile max500px */
+
+@media (max-width: 500px) {
+    #inicio h1{
+        font-size: 40px;
+    }
+}
+
+
+
+/* PAGINA MOBILE INDEX */
+
+@media(max-width:450px){
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+    header .logo{
+        background-color: transparent;
+    }
+    .menu-label{
+        margin: 10px;
+    }
+    .navbar-list{
+        align-items: center;
+        text-align: center;
+        top: 87px;
+        width: 70%;
+    }
+
+     h1{
+        font-size: 30px;
+    }
+
+    #hero button{
+        font-size: 15px;
+    }
+
+    #somos .container{
+        padding: 80px;
+    }
+
+    .texto h2{
+        font-size: 20px;
+    }
+    .texto p{
+        align-items: center;
+        text-align: center;
+        font: 10px;
+        width: 230px;
+    }
+    #nuestros-servicios h2{
+        font-size: 25px;
+    }
+    #nuestros-servicios .carta{
+        width: 280px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about h3{
+        font-size: 30px;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #content .card{
+        width: 250px;
+        height: 450px;
+    }
+    .card{
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-contacto{
+        font-size: 20px;
+        text-align: center;
+    }
+    .medios-comunicacion{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
 }

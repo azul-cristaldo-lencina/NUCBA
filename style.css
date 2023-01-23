@@ -66,6 +66,8 @@ header .logo{
     font-size: 3em;
 }
 
+
+
 header .container{
     display: flex;
     justify-content: space-between;
@@ -85,8 +87,11 @@ header a{
     color: black;
 }
 
+
 header a:hover{
-    color: white
+    color: white;
+    text-decoration: underline;
+    transform: scale(0.5); 
 }
 
 #hero{
@@ -262,17 +267,15 @@ footer{
 
 
 /* Pagina de registro */
-
 #registro{
     text-align: center;
-    padding: 150px 12px;
+    padding: 50px 12px;
     display: flex;
     align-items: center;
     justify-items: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
-    color: rgb(255, 251, 251);
+    height: 75vh;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(
         0deg,
@@ -285,20 +288,30 @@ footer{
     background-position: center center;
 }
 
-a{
-    text-decoration: none;
+#registro h1{
+    font-size: 2em;
 }
 
-form{
+label{
+    color: aliceblue;
+}
+
+.form-registro{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-}
-
-form input{
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
     margin: 8px;
 }
+
+.form-registro input{
+    width: 350px;
+    font-size: 1em;
+    margin: 8px;
+    border-radius: 25px;
+}
+
 
 /* Pagina de inicio de sesion */
 
