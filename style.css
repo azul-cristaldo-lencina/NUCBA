@@ -129,6 +129,10 @@ header a:hover{
     width: 250px;
 }
 
+.texto .bandera{
+    width: 20px;
+    height: 20px;
+}
 
 
 #somos .container{
@@ -223,9 +227,15 @@ header a:hover{
     padding: 20px;
 }
 
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .info-contacto{
     margin: 10px;
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,6 +257,20 @@ header a:hover{
 .medios-comunicacion img{
     width: 25px;
     height: 25px;
+}
+
+#formulario form{
+    display: flex;
+    width: 450px;
+    text-align: center;
+}
+
+#formulario form label{
+    color: black;
+}
+
+h6{
+    font-size: 25px;
 }
 
 footer{
