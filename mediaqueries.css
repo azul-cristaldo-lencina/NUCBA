@@ -261,17 +261,25 @@ footer{
         background-color: transparent;
     }
     .menu-label{
-        margin: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-label img{
+        background-color: none;
     }
     .navbar-list{
+        font-size: 20px;
         align-items: center;
         text-align: center;
-        top: 87px;
-        width: 70%;
+        top: 70px;
+    }
+
+    .navbar-list a{
+        font-size: 25px;
     }
 
      h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #hero button{
@@ -293,6 +301,11 @@ footer{
     }
     #nuestros-servicios h2{
         font-size: 25px;
+    }
+
+    #nuestros-servicios p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
     #nuestros-servicios .carta{
         width: 280px;
