@@ -1,6 +1,6 @@
 
 /* RESPONSIVE MODO TABLET */
-@media (max-width: 990px){
+@media (max-width: 900px){
 
     .container{
         gap: 10px;
@@ -34,7 +34,7 @@ header .logo{
 
 .navbar-list a{
     display: flex;
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(255, 253, 240);
     justify-content: space-around;
 }
